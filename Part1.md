@@ -424,3 +424,31 @@ static void ShowBlogs(BloggingContext context)
 
 ![image](assets/FirstView.png)
 
+# Code samples for this installment
+
+- Comment out `DeleteAndModifyRecordIndividualContexts`, build/run, examine results
+- Set a breakpoint on `CreateNewPopulateRead` and step through the code.
+- Comment out `CreateNewPopulateRead` uncomment `DeleteAndModifyRecordIndividualContexts`, build/run, examine results
+- Set a breakpoint on `DeleteAndModifyRecordIndividualContexts` and step through the code.
+- Open SSMS (SQL-Server Managment Studio), connect to `(localdb)\MSSQLLocalDB` and inspect tables in the database `EFSaving.RelatedData`
+- Once you have a feel for the code, take time to modify the code and see the outcome
+- In the next installment code will be added to the class `PopulateOperations` and placed into a new branch to keep things easy, no Git merge required
+
+```csharp
+using System.Threading.Tasks;
+using Saving.Classes;
+using static Saving.Utilities.ConsoleKeysHelper;
+
+namespace Saving
+{
+    public class Program
+    {
+        public static async Task Main()
+        {
+            await BlogPostSample.CreateNewPopulateRead();
+            await BlogPostSample.DeleteAndModifyRecordIndividualContexts();
+            PauseTenSeconds("Press a key or timeout in 10 seconds");
+        }
+    }
+}
+```
