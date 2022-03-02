@@ -103,6 +103,8 @@ With
 UseSqlServer(config.GetConnectionString("DatabaseConnection"))
 ```
 
+See completed [class here](https://github.com/karenpayneoregon/learn-ef-core-csharp/blob/Level1/NorthWindContacts/Data/Configurations/NorthContext.cs).
+
 Each configuration now reads the connection string from appsettings.json rather than before, a private variable.
 
 
