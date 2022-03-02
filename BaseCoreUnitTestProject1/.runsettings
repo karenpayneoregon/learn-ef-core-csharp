@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+	<RunConfiguration>
+		<EnvironmentVariables>
+			<dofx>Mocked</dofx>
+		</EnvironmentVariables>
+	</RunConfiguration>
+	<!--<PropertyGroup>
+			<RunSettingsFilePath>$(MSBuildProjectDirectory)\main.runsettings</RunSettingsFilePath>
+		</PropertyGroup>-->
+</RunSettings>
