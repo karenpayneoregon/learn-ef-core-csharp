@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseCoreUnitTestProject1", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{85110A67-C3D4-4BD0-A0C1-F9EEEA78DCA2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWindContactsUnitTest", "NorthWindContactsUnitTest\NorthWindContactsUnitTest.csproj", "{028024AF-22A0-49BA-8AAC-2D819ADE2446}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,10 @@ Global
 		{85110A67-C3D4-4BD0-A0C1-F9EEEA78DCA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85110A67-C3D4-4BD0-A0C1-F9EEEA78DCA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{85110A67-C3D4-4BD0-A0C1-F9EEEA78DCA2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{028024AF-22A0-49BA-8AAC-2D819ADE2446}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{028024AF-22A0-49BA-8AAC-2D819ADE2446}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{028024AF-22A0-49BA-8AAC-2D819ADE2446}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{028024AF-22A0-49BA-8AAC-2D819ADE2446}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -80,6 +86,7 @@ Global
 		{AA275621-2FD8-40FC-9FB4-866F0249D690} = {EF606CB9-FC8D-4186-81F3-839830671C8D}
 		{5647E6BA-57D0-4185-8F62-D5BEF21A0598} = {B5E54171-F475-4ECF-BBC3-0816BBBA9003}
 		{85110A67-C3D4-4BD0-A0C1-F9EEEA78DCA2} = {B5E54171-F475-4ECF-BBC3-0816BBBA9003}
+		{028024AF-22A0-49BA-8AAC-2D819ADE2446} = {B5E54171-F475-4ECF-BBC3-0816BBBA9003}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {934950CE-875F-42BC-8440-5AF2E9B64C72}
