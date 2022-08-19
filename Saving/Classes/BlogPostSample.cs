@@ -19,6 +19,83 @@ namespace Saving.Classes
             await context.Database.EnsureCreatedAsync();
         }
 
+        public static async Task UpdateExisting()
+        {
+            await FreshStart();
+
+
+            await using var context = new BloggingContext();
+
+            var blog1 = new Blog
+            {
+                Url = "http://blogs.msdn.com/dotnet/csharp",
+                Description = "Developer blog",
+                Posts = new List<Post>
+                {
+                    new() { Title = "Intro to C#", Content = "Basic C#"},
+                    new() { Title = "Working with classes", Content = "Understanding classes"}
+                }
+            };
+
+            var blog2 = new Blog
+            {
+                Url = "http://blogs.msdn.com/dotnet/vbnet",
+                Description = "Developer blog",
+                Posts = new List<Post> { new()
+                {
+                    Title = "Intro to VB", 
+                    Content = "Basic VB.NET"
+                } }
+            };
+
+            var blog3 = new Blog
+            {
+                Url = "http://blogs.msdn.com/dotnet/fsharp",
+                Description = "Developer blog",
+                Posts = new List<Post> { new()
+                {
+                    Title = "Intro to F#", 
+                    Content = "Learn F#"
+                } }
+            };
+
+            context.AddRange(blog1, blog2, blog3);
+
+            await context.SaveChangesAsync();
+
+            foreach (var blog in context.Blogs)
+            {
+                Debug.WriteLine($"{blog.BlogId,-5}{blog.Description} {blog.Url}");
+            }
+
+            int primaryKey = 2;
+            
+            var incomingBlog = new Blog
+            {
+                BlogId = primaryKey,
+                Url = "http://blogs.msdn.com/dotnet/efcore-net",
+                Description = "Karen's blog",
+                Posts = new List<Post> { new()
+                {
+                    Title = "Intro to EF Core", 
+                    Content = "Basics"
+                } }
+            };
+
+            var existingBlog = await context.Blogs.FindAsync(primaryKey);
+            var entry = context.Entry(existingBlog);
+            entry.CurrentValues.SetValues(incomingBlog);
+
+            await context.SaveChangesAsync();
+            Debug.WriteLine("");
+
+            foreach (var blog in context.Blogs)
+            {
+                Debug.WriteLine($"{blog.BlogId,-5}{blog.Description} {blog.Url}");
+            }
+
+        }
+
         public static async Task CreateNewPopulateRead()
         {
             static void ShowBlogs(BloggingContext context)

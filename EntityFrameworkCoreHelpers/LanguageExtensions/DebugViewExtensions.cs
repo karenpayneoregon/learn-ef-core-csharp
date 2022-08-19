@@ -50,6 +50,7 @@ namespace EntityFrameworkCoreHelpers.LanguageExtensions
 
             StringBuilder builder = new();
 
+
             foreach (var chunk in chunks)
             {
                 foreach (var item in chunk)
@@ -67,3 +68,5 @@ namespace EntityFrameworkCoreHelpers.LanguageExtensions
 
     }
 }
+
+

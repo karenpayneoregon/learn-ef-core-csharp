@@ -29,11 +29,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntityFrameworkCoreHelpers"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Unit test projects", "Unit test projects", "{B5E54171-F475-4ECF-BBC3-0816BBBA9003}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseCoreUnitTestProject1", "BaseCoreUnitTestProject1\BaseCoreUnitTestProject1.csproj", "{5647E6BA-57D0-4185-8F62-D5BEF21A0598}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BaseCoreUnitTestProject1", "BaseCoreUnitTestProject1\BaseCoreUnitTestProject1.csproj", "{5647E6BA-57D0-4185-8F62-D5BEF21A0598}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{85110A67-C3D4-4BD0-A0C1-F9EEEA78DCA2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NorthWindContactsUnitTest", "NorthWindContactsUnitTest\NorthWindContactsUnitTest.csproj", "{028024AF-22A0-49BA-8AAC-2D819ADE2446}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthWindContactsUnitTest", "NorthWindContactsUnitTest\NorthWindContactsUnitTest.csproj", "{028024AF-22A0-49BA-8AAC-2D819ADE2446}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bogus mock data", "Bogus mock data", "{D72109C0-87FD-4AAA-A272-FD05C4493A6C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,7 @@ Global
 		{5647E6BA-57D0-4185-8F62-D5BEF21A0598} = {B5E54171-F475-4ECF-BBC3-0816BBBA9003}
 		{85110A67-C3D4-4BD0-A0C1-F9EEEA78DCA2} = {B5E54171-F475-4ECF-BBC3-0816BBBA9003}
 		{028024AF-22A0-49BA-8AAC-2D819ADE2446} = {B5E54171-F475-4ECF-BBC3-0816BBBA9003}
+		{D72109C0-87FD-4AAA-A272-FD05C4493A6C} = {EF606CB9-FC8D-4186-81F3-839830671C8D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {934950CE-875F-42BC-8440-5AF2E9B64C72}
