@@ -44,8 +44,7 @@ Double click the project in solution explorer, add the following and save. These
 
 
 ### DbContext code
-
-- 
+ 
 - Create a class under `Configurations` folder named `NorthContext.cs`
 - Change the namespace to `namespace NorthWindContacts.Data` as shown below. Note the class is partial as in the parent class
 
